@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="fr">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projet1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="page1">
+
+    <!--Navigation-->
+
+    <div class="topnav" id="myTopnav">
+        <div class="logoheader">
+            <a href="index.html" class="titrenav">PlayRoom</a>
+        </div>
+
+        <a href="index.html#service">Nos services</a>
+        <a href="index3.html">Notre catalogue</a>
+
+        <div class="login">
+            <a href="index1.html" class="btnin active">se connecter</a>
+
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <section class="sign">
+        <div class="container-fluid">
+            <div class="col-4 signin-content">
+                <h2 class="form-title">Connexion</h2>
+                <form method="POST" class="registre-form">
+                    <div class="form-group">
+                        <label for="ton-email"> </label>
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ton-mdp"> </label>
+                        <input type="password" name="ton-mdp" id="ton-mdp" placeholder="Mot de passe" />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                        <label for="remember-me" class="rester-connecter">Rester Connexion </label>
+                    </div>
+                    <div class="form-group form-button">
+                        <input type="submit" name="signin" id="signin" class="form-submit" value="Connexion" />
+                    </div>
+                </form>
+            </div>
+
+            <div id="ligne">ligne
+                <span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class=" col-6 signup-content">
+                <div class="signup-form">
+                    <h2 class="titre-signup">Inscription</h2>
+                    <form method="POST" class="registre-form">
+                        <div class="form-group">
+                            <label for="email"> </label>
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"> </label>
+                            <input type="password" name="pass" id="pass" placeholder="Mot de passe" />
+                        </div>
+                        <div class="form-group">
+                            <label for="re-pass"> </label>
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Répéter mot de passe" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Prénom"> </label>
+                            <input type="text" name="name" id="name" placeholder="Prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="Prénom"> </label>
+                            <input type="text" name="nom" id="nom" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="Prénom"> </label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term">Accepter les <a href="#"
+                                    class="term-service">conditions d'utilisation</a></label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Terminer" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!--script-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+</script>
+
+</html>

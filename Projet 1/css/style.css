@@ -4,6 +4,107 @@ body {
   background: url(../img/backgroud.jpg) no-repeat;
 }
 
+/*navbar header
+======================================*/
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  transform: translateZ(0);
+  transition-duration: .3s;
+  transition-property: transform;
+}
+
+.topnav a::before {
+  pointer-events: none;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+
+.topnav a:hover,
+.topnav a.active,
+.topnav a:focus {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px black;
+  color: #76FF03;
+}
+
+.topnav a:hover:before,
+.topnav a:active:before,
+.topnav a:focus:before {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav {
+    background-color: rgb(46, 46, 46);
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.login {
+  margin-left: 50px;
+  float: left;
+}
+
+.btnin {
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+/*header
+======================================*/
 .titreheader {
   font-size: 80;
   margin: 80px 0px 50px 40px;
@@ -30,6 +131,7 @@ body {
   text-transform: uppercase;
   border-radius: 10px;
   transform: scale(1);
+  transition-duration: 1000ms;
 }
 
 .btnfree:hover {
@@ -38,6 +140,10 @@ body {
   text-decoration: none;
   transform: scale(1.15);
   transition: 400ms
+}
+
+.block {
+  width: 1500px;
 }
 
 .block p {
@@ -54,13 +160,12 @@ body {
   color: antiquewhite;
 }
 
-.block {
-  width: 1500px;
-
-}
-
 .logoheader {
   float: left;
+}
+
+h2{
+  text-transform: uppercase;
 }
 
 /*section
@@ -157,101 +262,82 @@ h1 {
 }
 
 
-
-/*navbar header
+/*footer
 ======================================*/
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
+footer{
+  background-color: #2a2a2a;
+  height: 80px;
 }
 
-.topnav a {
+.btn-footer{
   float: right;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 25px 30px;
+  color: white;
+  font-size: 15px;
+  margin-left:  100px;
+}
+
+.btn-footer:hover{
+  color: white;
   text-decoration: none;
-  font-size: 17px;
-  transform: translateZ(0);
-  transition-duration: .3s;
-  transition-property: transform;
-}
-
-.topnav a::before {
-  pointer-events: none;
-  z-index: -1;
-  content: '';
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-  transition-duration: 0.3s;
-  transition-property: transform, opacity;
 }
 
 
-.topnav a:hover,
-.topnav a:active,
-.topnav a:focus {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 10px black;
-  color: #76FF03;
+/*formulaire connection
+======================================*/
+#page1{
+  background-image: none;
 }
 
-.topnav a:hover:before,
-.topnav a:active:before,
-.topnav a:focus:before {
-  opacity: 1;
-  transform: translateY(-5px);
+.sign{
+  background: white
 }
 
-.topnav .icon {
-  display: none;
+.signin-content, .signup-content{
+  
+  margin-top: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 600px) {
-
-  .topnav {
-    background-color: rgb(46, 46, 46);
-  }
-
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.login {
+.signin-content{
   margin-left: 50px;
-  float: left;
 }
 
-.btnup {
-  font-weight: bold;
+.signup-content{
+  margin: 0px 50px 100px 50%;
+}
+
+#ligne {
+  color: #ffffff;
+  position: relative;
+  display: inlin;
+  text-decoration: none;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 100px
+}
+
+#ligne span {
+  position: absolute;
+  display: block;
+}
+
+#ligne span:nth-child(1){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #76FF03);
+  animation: animate1 2.5s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
 }
