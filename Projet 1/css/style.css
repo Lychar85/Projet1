@@ -5,6 +5,14 @@ body {
   background: url(../img/backgroud.jpg) no-repeat;
 }
 
+@media screen and (max-width: 600px){
+  body{
+    margin: auto;
+    background: none;
+    font-size: 20px;
+  }
+}
+
 /*navbar header
 ======================================*/
 
@@ -262,7 +270,7 @@ h2 {
 
 
 .liste-offre {
-  margin: 70px 0px 0px 0px;
+  margin: 70px 0px 50px 0px;
   list-style-image: url("https://img.icons8.com/material-rounded/24/000000/circled-chevron-right.png")
 }
 
@@ -362,6 +370,48 @@ footer {
   100% {
     left: 100%;
   }
+}
+
+/*page2
+============================================================================*/
+#page2{
+  background-image: none;
+  background: url(../img/backgroudpage2.jpg) fixed;
+}
+
+#page2 .topnav{
+  background-color: #;
+}
+
+.offrep2{
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.bandepage2{
+  background: none;
+  height: 800px;
+}
+
+.btnachatp, .btnachatc{
+  color: #000000;
+  text-decoration: none;
+  background-color: #720d0d;
+  padding: 25px;
+  border-radius: 10px;
+  transition-duration: 400ms;
+}
+.btnachatc{
+  margin-top: 200px;
+}
+
+
+.btnachatp:hover, .btnachatc:hover{
+  text-decoration: none;
+  font-size: 110%;
+  color:#720d0d ;
+  background-color: white;
+  transition-duration: 400ms;
 }
 
 /*page3
