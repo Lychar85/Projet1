@@ -57,95 +57,91 @@
         }
     </script>
 
-    <section class="sign">
+    <!--Formulaire-->
+
+    <div class="container-fluid sign">
         <div class="container">
-            <div class="col-md-12 signin-content">
-                <form method="POST" class="registre-form">
-                    <h2 class="titre-form">Connexion</h2>
-                    <div class="form-group">
-                        
-                        <label for="ton-email"> </label>
-                        <input type="email" name="email" id="email" placeholder="Email" />
-                    </div>
-                    <div class="form-group">
-                        <label for="ton-mdp"> </label>
-                        <input type="password" name="ton-mdp" id="ton-mdp" placeholder="Mot de passe" />
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                        <label for="remember-me" class="rester-connecter">Rester Connexion </label>
-                    </div>
-                    <div class="form-group form-button">
-                        <input type="submit" name="signin" id="signin" class="form-submit" value="Connexion" />
-                    </div>
-                </form>
-            </div>
+            <div class="row form">
+                <div class="col-md-5 sign-up">
+                    <form role="form" method="post" action="register.php">
+                        <fieldset>
+                            <p class="title"> inscription</p>
+                            <div class="form-group">
+                                <input type="text" name="identifiant" id="identifiant" class="form-control input-lg"
+                                    placeholder="Identifiant">
+                            </div>
 
-            <div id="ligne">
-                <span></span><span></span><span></span><span></span>
-            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control input-lg"
+                                    placeholder="Adresse Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="pass" id="pass" class="form-control input-lg"
+                                    placeholder="Mot de passe">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="pass2" id="pass2" class="form-control input-lg"
+                                    placeholder="Répéter Mot de passe">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    Accepter les <a href="#" class="term-service">conditions d'utilisation</a>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="submit" class="btnsign-in" value="S'inscrire">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
 
-            <div class=" col-md-12 signup-content">
-                <div class="signup-form">
-                    <form method="POST" class="registre-form">
-                        <h2 class="titre-form">inscription</h2>
-                        <div class="form-group">
-                            <label for="email"> </label>
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div class="form-group">
-                            <label for="pass"> </label>
-                            <input type="password" name="pass" id="pass" placeholder="Mot de passe" />
-                        </div>
-                        <div class="form-group">
-                            <label for="re-pass"> </label>
-                            <input type="password" name="re_pass" id="re_pass" placeholder="Répéter mot de passe" />
-                        </div>
-                        <div class="form-group">
-                            <label for="Prénom"> </label>
-                            <input type="text" name="name" id="name" placeholder="Prénom">
-                        </div>
-                        <div class="form-group">
-                            <label for="Prénom"> </label>
-                            <input type="text" name="nom" id="nom" placeholder="Nom">
-                        </div>
-                        <div class="form-group">
-                            <label for="Prénom"> </label>
-                            <input type="date" name="date" id="date">
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                            <label for="agree-term" class="label-agree-term">Accepter les <a href="#"
-                                    class="term-service">conditions d'utilisation</a></label>
-                        </div>
-                        <div class="form-group form-button">
-                            <input type="submit" name="signup" id="signup" class="form-submit" value="Terminer" />
-                        </div>
+                <div class="col-md-2">
+                    <!-------vide------>
+                </div>
+
+                <div class="col-md-5 sign-in">
+                    <form role="form">
+                        <fieldset>
+                            <p class="title"> connexion </p>
+
+                            <div class="form-group">
+                                <input type="text" name="Identifiant" id="Identifiant" class="form-control input-lg"
+                                    placeholder="Identifiant">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="pass" id="pass" class="form-control input-lg"
+                                    placeholder="Mot de passe">
+                            </div>
+                            <div>
+                                <input type="submit" class="btnsign-in" value="Se connecter">
+                            </div>
+
+                        </fieldset>
                     </form>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <!--BAS DE PAGE-->
 
-<!--BAS DE PAGE-->
+    <footer>
+        <div class="container-fluid">
 
-<footer>
-    <div class="container-fluid">
-
-        <div class="row">
-            <div class="col">
-                <a href="index.html" class="btn-footer">Acceuil</a>
-                <a href="index3.html" class="btn-footer">Notre catalogue</a>
-                <a href="index2.html" class="btn-footer">Nos services</a>
-            </div>
-            <div class="col">
-                <a href="#" class="btn-footer-right">Confidentialité</a>
-                <a href="#" class="btn-footer-right">Conditions d'utilisation</a>
+            <div class="row">
+                <div class="col">
+                    <a href="index.html" class="btn-footer">Acceuil</a>
+                    <a href="index3.html" class="btn-footer">Notre catalogue</a>
+                    <a href="index2.html" class="btn-footer">Nos services</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="btn-footer-right">Confidentialité</a>
+                    <a href="#" class="btn-footer-right">Conditions d'utilisation</a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
