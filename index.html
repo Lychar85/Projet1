@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="fr">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projet1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body id="page0">
+
+    <!--NAVIGATION-->
+
+    <div class="topnav" id="myTopnav">
+        <div class="logoheader">
+            <a href="index.html" class="titrenav active">PlayRoom</a>
+        </div>
+
+        <a href="index2.html">Nos services</a>
+        <a href="index3.html">Notre catalogue</a>
+
+        <div class="login">
+            <a href="index1.html" class="btnin">se connecter</a>
+
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!--HEADER-->
+    <header>
+        <div class="container-fluid block">
+            <div class="row header">
+                <div class="col-md-6 col-xs-12">
+
+                    <h2 class="titreheader">jouer à tout vos jeux préférer sans limite !</h2>
+                    <a href="index2.html" class="btnfree">essayer maintenant</a>
+                    <p>Essai pendant 7 jours puis 9,99€/mois sans engagement.</p>
+                </div>
+
+                <div class="bandegreen">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Section-->
+
+    <section class="sectionp1">
+        <div class="container">
+            <h1>Profité d'un catalogue de jeux incroyable</h1>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <img src="img/Borderlands3.png" class="imggame" height="280" width="230">
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <img src="img/MarvelsAvengers.jpg" class="imggame" height="280" width="230">
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <img src="img/Doom.png" class="imggame" height="280" width="230">
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <img src="img/Metro.png" class="imggame" height="280" width="230">
+                </div>
+                <a href="index3.html" class="txtgame">Découvrez tous nos jeux</a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <img src="img/ecran.jpg" class="imgfloat-left">
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <h2>Jouer sur tous vos ecran </h2>
+                    <p>Jouez tout de suite, en un seul clic. Choisissez l'écran sur lequel vous voulez jouer. Jouez sur
+                        un ordinateur, un téléphone ou une tablette compatible. À vous de choisir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SERVICES-->
+
+    <div class="container-fluid aloy" id="service">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+            </div>
+            <div class="col-md-4 col-xs-12 offre">
+                <a href="index2.html" class="btnoffre">essayer</a>
+                <h3><span>Play</span>Room Pro <strong>9,99€/mois</strong></h3>
+
+                <ul class="liste-offre">
+                    <li>Tous le catalogue disponible</li>
+                    <li>En streaming sur tous vos appareil</li>
+                    <li>des remises exclusives</li>
+                    <li>possibilité de télécharger vos jeux préférer, plus besoin d'internet !</li>
+                    <li>Une résolution pouvant atteindre 4k </li>
+                </ul>
+            </div>
+            <div class="col-md-4  col-xs-12 offre">
+                <a href="index2.html" class="btnoffre">essayer</a>
+                <h3><span>Play</span>Room Classic <strong>4,99€/mois</strong></h3>
+
+                <ul class="liste-offre">
+                    <li>Tous le catalogue disponible</li>
+                    <li>En streaming sur tous vos appareil</li>
+                    <li>Jusqu'à 1080p de résolution</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--BAS DE PAGE-->
+
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="index.html" class="btn-footer">Acceuil</a>
+                    <a href="index3.html" class="btn-footer">Notre catalogue</a>
+                    <a href="index1.html" class="btn-footer">Connexion</a>
+                </div>
+                <div class="col-md-12">
+                    <a href="#" class="btn-footer-right">Confidentialité</a>
+                    <a href="#" class="btn-footer-right">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+<!--script-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+</script>
+
+</html>
