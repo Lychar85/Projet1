@@ -2,10 +2,10 @@ body {
   font-family: 'Itim', cursive;
   font-size: 25px;
   color: rgb(0, 0, 0);
-  background: url(../img/backgroud.jpg) no-repeat;
+  background: url(../img/cropped-1920-1080-1022126.jpg) no-repeat;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body {
     margin: auto;
     background: none;
@@ -97,7 +97,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
   .topnav {
     background-color: rgb(46, 46, 46);
@@ -113,7 +113,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .topnav.responsive {
     position: relative;
   }
@@ -127,7 +127,8 @@ body {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    white-space: nowrap;
   }
 }
 
@@ -312,6 +313,7 @@ h2 {
 footer {
   background-color: #2a2a2a;
   height: 80px;
+  
 }
 
 .btn-footer-right {
@@ -349,7 +351,7 @@ footer {
 }
 
 .sign {
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   margin-top: 15%;
   text-align: center;
   background: none;
@@ -463,4 +465,79 @@ h1 {
 .jeux p {
   margin-top: 15px;
   font-size: 70%;
+}
+/*Admin
+============================================================================*/
+#admin{
+  background-image: none;
+  font-size: 20px;
+}
+
+.admin{
+  margin-bottom: 600px;
+  margin-top: 100px;
+}
+
+label{
+  margin-top: 25px;
+}
+
+
+.btn-ajouter{
+  margin-top: 52px;
+  border: none;
+  padding: 20px;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 25px;
+
+}
+
+#prix-game{
+  margin-bottom: 50px;
+}
+
+.imgajout {
+  padding: 10px;
+  border-radius: 10px;
+  color: #000000;
+  box-shadow: 0px 0px 5px black;
+}
+
+.imgajout:hover{
+  text-decoration: none;
+  transition-duration: 300ms;
+}
+
+.btn-admin{
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px black;
+  font-size: 140%;
+  background: none;
+  border: none;
+}
+
+/*tableau comptes
+===========================================*/
+.game{
+  margin-bottom: 30px;
+}
+
+.modal-dialog{
+  font-size: 120%;
+}
+
+td button{
+  color: #ffffff;
+  border-radius: 10px;
+  margin-left: 25px;
+  border: none;
+  background: #2a2a2a;
+  transition-duration: 400ms;
+}
+
+td button:hover{
+  background-color: #ffffff;
+  color: #720d0d;
+  box-shadow: 0px 2px 2px black;
+  transition-duration: 400ms;
 }
